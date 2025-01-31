@@ -1,31 +1,45 @@
 # Amount Value Calculator Assignment 1
 
-A Java application that calculates and displays the growth of savings with compound interest.
+A Java application for calculating compound interest using object-oriented design.
 
-## Class Descriptions
+## Project Structure
 
-### AmountValue.java
-The main class that handles compound interest calculations and result display. Features include:
-- Monthly savings amount input
-- Annual interest rate calculation
-- Configurable time period in months
-- Formatted output display
+```
+amountvalueproject/
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── ratecalculation/
+│                       ├── AmountCalculator.java
+│                       ├── AmountFormatter.java
+│                       └── AmountTester.java
+├── images/
+│   └── output1.png
+└── README.md
+```
 
-## Source Code
+## Class Descriptions and Links
 
-- [AmountValue.java](/amountvalueproject/src/main/java/com/example/ratecalculation/AmountValue.java)
+### Core Components
+1. **[AmountCalculator.java](/amountvalueproject/src/main/java/com/example/ratecalculation/AmountCalculator.java)
+   - Manages financial calculations
+   - Validates input parameters
+   - Stores savings, interest rate, and period data
+
+2. **[AmountFormatter.java](/amountvalueproject/src/main/java/com/example/ratecalculation/AmountFormatter.java)
+   - Handles output formatting
+   - Generate  s formatted result tables
+   - Manages decimal formatting rules
+
+3. **[AmountTester.java](/amountvalueproject/src/main/java/com/example/ratecalculation/AmountTester.java)
+   - Application entry point
+   - Manages user input/output
+   - Demonstrates calculator usage
 
 ## Sample Output
 
-The application displays a table showing the growth of savings over time:
+Example calculation results:
 
 ![Output Screenshot](/amountvalueproject/images/output1.png)
-
-## Usage
-
-1. Run the program
-2. Enter the following when prompted:
-   - Monthly savings amount
-   - Annual interest rate (%)
-   - Number of months
-3. View the calculated growth table
